@@ -1,8 +1,9 @@
 {
-  "name": "jeesns-manage",
-  "version": "1.0.5",
-  "description": "vue admin project",
-  "author": "taylor <709161610@qq.com>",
+  "name": "jeesns",
+  "version": "1.2.0",
+  "description": "JEESNS后台管理系统 - Powered By JEESNS",
+  "author": "jeesns",
+  "private": true,
   "license": "MIT",
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -12,11 +13,11 @@
   "dependencies": {
     "axios": "^0.15.3",
     "echarts": "^3.3.2",
-    "element-ui": "^1.2.8",
+    "element-ui": "^1.3.7",
     "font-awesome": "^4.7.0",
     "nprogress": "^0.2.0",
-    "vue": "^2.2.2",
-    "vue-resource": "^1.3.4",
+    "vue": "^2.3.0-beta.1",
+    "vue-quill-editor": "^2.2.4",
     "vue-router": "^2.3.0",
     "vuex": "^2.0.0-rc.6"
   },

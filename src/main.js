@@ -6,16 +6,14 @@ import './assets/theme/theme-darkblue/index.css'
 import VueRouter from 'vue-router'
 import store from './vuex/store'
 import Vuex from 'vuex'
-//import NProgress from 'nprogress'
-//import 'nprogress/nprogress.css'
 import routes from './routes'
-// import Mock from './mock'
-// Mock.bootstrap();
 import 'font-awesome/css/font-awesome.min.css'
+import VueQuillEditor from 'vue-quill-editor'
 
 Vue.use(ElementUI)
 Vue.use(VueRouter)
 Vue.use(Vuex)
+Vue.use(VueQuillEditor)
 
 //NProgress.configure({ showSpinner: false });
 

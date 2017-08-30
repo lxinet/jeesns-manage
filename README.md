@@ -1,11 +1,8 @@
-**demo**: [https://taylorchen709.github.io/vue-admin/](https://taylorchen709.github.io/vue-admin/)
+# jeesns-manage
 
-# To start
+开发框架：VUE+ElementUI
 
-This is a project template for [vue-cli](https://github.com/vuejs/vue-cli)
-
-``` bash
-# install dependencies
+##安装说明
 npm install
 
 # serve with hot reload at localhost:8081
@@ -14,44 +11,15 @@ npm run dev
 # build for production with minification
 npm run build
 
-```
+##说明
+该系统是jeesns的后台前端代码，可以使用该代码进行部署jeesns的后台，可以进行前后端分离部署。
 
-# Folder structure
-* build - webpack config files
-* config - webpack config files
-* dist - build
-* src -your app
-    * api
-    * assets
-    * common
-    * components - your vue components
-    * mock
-    * styles
-    * views - your pages
-    * vuex
-    * App.vue
-    * main.js - main file
-    * routes.js
-* static - static assets
+##JEESNS代码
+[https://github.com/zchuanzhao/jeesns](https://github.com/zchuanzhao/jeesns)
 
-# Theme
-You can change theme by 
-1. Generate theme packages by [https://elementui.github.io/theme-preview/#/](https://elementui.github.io/theme-preview/#/)
-2. Put theme packages in src/assets/theme/
-3. Edit src/main.js 
-``` bash
-   import 'element-ui/lib/theme-default/index.css'
-   to
-   import './assets/theme/your-theme/index.css'
-```
-4. Edit src/styles/vars.scss
+## 相关网站
+官方网站：[http://www.jeesns.cn](http://www.jeesns.cn/)
 
-![theme-blue](https://raw.githubusercontent.com/taylorchen709/markdown-images/master/vueadmin/rec-demo.gif)
-![theme-green](https://raw.githubusercontent.com/taylorchen709/markdown-images/master/vueadmin/theme-green.png)
+技术支持：[http://www.lxinet.com](http://www.lxinet.com/)
 
-# Browser support
-
-Modern browsers and IE 10+.
-
-# License
-[MIT](http://opensource.org/licenses/MIT)
+服务器支持：[http://www.919dns.com](http://www.919dns.com/)

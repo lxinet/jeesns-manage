@@ -8,7 +8,6 @@
         <el-form-item prop="password">
             <el-input type="password" v-model="loginForm.password" auto-complete="off" placeholder="密码"></el-input>
         </el-form-item>
-        <el-checkbox v-model="checked" checked class="remember">记住密码</el-checkbox>
         <el-form-item style="width:100%;">
             <el-button type="primary" style="width:100%;" @click.native.prevent="handleSubmit" :loading="logining">登录
             </el-button>
@@ -50,14 +49,14 @@
                         login(params).then(res => {
                             this.logining = false;
                             let {message, code, data} = res;
-                            console.log(data)
                             if (code == -1) {
                                 this.$message({
                                     message: message,
                                     type: 'error'
                                 });
                             } else {
-                                sessionStorage.setItem('manager', JSON.stringify(data));
+                                sessionStorage.setItem('manager', JSON.stringify(data.user));
+                                sessionStorage.setItem('token', data.token);
                                 this.$router.push({path: '/main'});
                             }
                         });

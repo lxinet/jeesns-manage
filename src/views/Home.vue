@@ -13,8 +13,7 @@
 				<el-dropdown trigger="hover">
 					<span class="el-dropdown-link userinfo-inner"><img :src="this.sysUserAvatar" /> {{sysUserName}}</span>
 					<el-dropdown-menu slot="dropdown">
-						<el-dropdown-item>我的消息</el-dropdown-item>
-						<el-dropdown-item>设置</el-dropdown-item>
+						<el-dropdown-item @click.native="setting">设置</el-dropdown-item>
 						<el-dropdown-item divided @click.native="logout">退出登录</el-dropdown-item>
 					</el-dropdown-menu>
 				</el-dropdown>
@@ -75,7 +74,7 @@
 	export default {
 		data() {
 			return {
-				sysName:'VUEADMIN',
+				sysName:'JEESNS',
 				collapsed:false,
 				sysUserName: '',
 				sysUserAvatar: '',
@@ -103,20 +102,20 @@
 			},
 			handleselect: function (a, b) {
 			},
-			//退出登录
-			logout: function () {
-				var _this = this;
-				this.$confirm('确认退出吗?', '提示', {
-					//type: 'warning'
-				}).then(() => {
-					sessionStorage.removeItem('user');
-					_this.$router.push('/login');
-				}).catch(() => {
-
-				});
-
-
-			},
+            //退出登录
+            logout: function () {
+                var _this = this;
+                this.$confirm('确认退出吗?', '提示', {
+                    type: 'warning'
+                }).then(() => {
+                    sessionStorage.removeItem('manager');
+                    sessionStorage.removeItem('token');
+                    _this.$router.push('/login');
+                });
+            },
+            setting: function () {
+				window.open("../member/editInfo","_blank");
+            },
 			//折叠导航栏
 			collapse:function(){
 				this.collapsed=!this.collapsed;
@@ -126,7 +125,7 @@
 			}
 		},
 		mounted() {
-			var user = sessionStorage.getItem('user');
+			var user = sessionStorage.getItem('manager');
 			if (user) {
 				user = JSON.parse(user);
 				this.sysUserName = user.name || '';
