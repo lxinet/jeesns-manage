@@ -2,19 +2,19 @@
 
 开发框架：VUE+ElementUI
 
-##安装说明
+## 安装说明
 npm install
 
-# serve with hot reload at localhost:8081
+## 开发运行 localhost:8081
 npm run dev
 
-# build for production with minification
+## 编译
 npm run build
 
-##说明
+## 说明
 该系统是jeesns的后台前端代码，可以使用该代码进行部署jeesns的后台，可以进行前后端分离部署。
 
-##JEESNS代码
+## JEESNS代码
 [https://github.com/zchuanzhao/jeesns](https://github.com/zchuanzhao/jeesns)
 
 ## 相关网站
